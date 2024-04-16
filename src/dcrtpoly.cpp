@@ -7,8 +7,7 @@ void wrap_DCRTPolyImpl(jlcxx::Module& mod) {
     .apply<lbcrypto::DCRTPolyImpl<lbcrypto::BigVector>>([](auto wrapped) {
         typedef typename decltype(wrapped)::type WrappedT;
         wrapped.method("DropLastElementAndScale",
-            static_cast<void
-                        (WrappedT::*)(const std::vector<lbcrypto::NativeInteger>&,
-                                      const std::vector<lbcrypto::NativeInteger>&,)>(&WrappedT::DropLastElementAndScale));
+            static_cast<void (WrappedT::*)(const std::vector<lbcrypto::NativeInteger>&,
+                                      const std::vector<lbcrypto::NativeInteger>&)>(&WrappedT::DropLastElementAndScale));
     });
 }
