@@ -71,6 +71,7 @@ add_library(openfhe_julia SHARED
   ${CMAKE_SOURCE_DIR}/src/openfhe_julia.cpp
   ${CMAKE_SOURCE_DIR}/src/enums.cpp
   ${CMAKE_SOURCE_DIR}/src/nativeinteger.cpp
+  ${CMAKE_SOURCE_DIR}/src/bigvector.cpp
   ${CMAKE_SOURCE_DIR}/src/ubint.cpp
   ${CMAKE_SOURCE_DIR}/src/cryptocontextbfvrns.cpp
   ${CMAKE_SOURCE_DIR}/src/cryptocontextbgvrns.cpp
