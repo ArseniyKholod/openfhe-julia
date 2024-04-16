@@ -1,6 +1,7 @@
 #include "jlcxx/jlcxx.hpp"
+#include "jlcxx/stl.hpp"
 #include "openfhe.h"
 
 void wrap_VectorNativeInteger(jlcxx::Module& mod) {
-  mod.add_type<std::vector<lbcrypto::NativeInteger>>("std::vector<lbcrypto::NativeInteger>");
+  jlcxx::stl::apply_stl<lbcrypto::NativeInteger>(mod);
 }
