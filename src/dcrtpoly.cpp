@@ -6,6 +6,6 @@ void wrap_DCRTPolyImpl(jlcxx::Module& mod) {
       jlcxx::julia_base_type<lbcrypto::BigVector>())
     .apply<lbcrypto::DCRTPolyImpl<lbcrypto::BigVector>>([](auto wrapped) {
         typedef typename decltype(wrapped)::type WrappedT;
-        wrapped.method("DropLastElementAndScale");
+        wrapped.method("DropLastElementAndScale", &WrappedT::DropLastElementAndScale);
     });
 }
