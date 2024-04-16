@@ -2,5 +2,5 @@
 #include "openfhe.h"
 
 void wrap_DCRTPolyImpl(jlcxx::Module& mod) {
-  mod.add_type<lbcrypto::DCRTPoly>("DCRTPolyImpl");
+  mod.add_type<lbcrypto::DCRTPolyImpl>("DCRTPolyImpl");
 }
