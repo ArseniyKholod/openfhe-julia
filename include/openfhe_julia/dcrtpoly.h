@@ -3,6 +3,6 @@
 
 #include "jlcxx/jlcxx.hpp"
 
-void wrap_DCRTPoly(jlcxx::Module& mod);
+void wrap_DCRTPolyImpl(jlcxx::Module& mod);
 
 #endif // ifndef OPENFHE_JULIA_DCRTPOLY_H_

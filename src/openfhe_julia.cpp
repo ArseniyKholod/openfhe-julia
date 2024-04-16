@@ -59,7 +59,7 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& mod) {
   wrap_Params(mod);
   wrap_CCParams(mod);
   wrap_Serializable(mod);
-  wrap_DCRTPoly(mod);
+  wrap_DCRTPolyImpl(mod);
   wrap_PrivateKeyImpl(mod);
   wrap_PublicKeyImpl(mod);
   wrap_KeyPair(mod);
